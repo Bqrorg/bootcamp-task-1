@@ -1,5 +1,9 @@
+
+
 /* fix code */
 
+
+@import url("./fonts.css");
 *,
 *::before,
 *::after {
@@ -9,39 +13,27 @@
   padding: 0px;
   text-decoration: none;
 }
-
 html {
-  font-family: "vazirmatn";
+  font-family: "Vazirmatn";
   font-size: 62.5%;
   height: 100vh;
 }
 
-/* font face */
-
-@font-face {
-  font-family: "vazirmatn";
-  src: url(/font/Vazirmatn-Bold.woff2) format(woff2);
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: "vazirmatn";
-  src: url(/font/Vazirmatn-Regular.woff2) format(woff2);
-  font-weight: 400;
-}
 
 /* style body */
 
-body {
-  margin: 50px 30px;
-}
 
+body {
+  font-family: "Vazirmatn";
+  margin: 3rem 3rem;
+  font-size: 1rem;
+  font-weight: 400;
+}
 :root {
   --color-primary-1: #850f8d;
   --color-primary-2: #fb9ad1;
   --border-radius-: 15px;
 }
-
 section {
   display: grid;
   grid-template-columns: 1fr;
@@ -61,10 +53,13 @@ section {
   box-shadow: 0 0 1rem var(--color-primary-1);
 }
 
+
 /* styles title */
 
+
 .title {
-  font-weight: bold;
+  font-weight: 900;
+  margin-bottom: 3rem;
   font-size: 3rem;
   color: var(--color-primary-1);
 }
@@ -73,12 +68,11 @@ section {
   justify-content: space-between;
   align-items: center;
 }
-
 .requests__header.number {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: bold;
+  font-weight: 700;
   width: 40px;
   height: 40px;
   border-radius: 10px;
@@ -94,43 +88,45 @@ section {
   gap: 15px;
 }
 
+
 /* styles subtitle */
+
 
 .requests__body {
   display: flex;
   flex-direction: column;
   padding: 10px 0px;
 }
-
 .requests__body.header {
-  font-weight: bold;
+  font-weight: 900;
   font-size: 2rem;
 }
+
+
 /* styles footer  */
+
 
 .requests__footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .requests__footer.btn {
   border-radius: var(--border-radius-);
   border: 2px solid var(--color-primary-2);
   font-size: 1.2rem;
-  font-weight: bold;
+  font-weight: 900;
   color: var(--color-primary-2);
   background-color: var(--color-primary-1);
   padding: 1.8rem 2.8rem;
-}
-
-.requests__footer.btn:hover {
+  font-family: "Vazirmatn";
   cursor: pointer;
+}
+.requests__footer.btn:hover {
   background-color: var(--color-primary-2);
   color: var(--color-primary-1);
   border: 2px solid var(--color-primary-1);
 }
-
 .requests__footer.image {
   display: flex;
   align-items: center;
@@ -142,7 +138,6 @@ section {
 .requests__footer.name {
   font-size: 1.3rem;
 }
-
 img {
   object-fit: cover;
   border-radius: 5px;
@@ -150,7 +145,9 @@ img {
   height: 40px;
 }
 
+
 /* media query */
+
 
 @media screen and (min-width: 860px) {
   section {
